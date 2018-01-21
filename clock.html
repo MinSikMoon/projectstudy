@@ -31,8 +31,8 @@
 				var usedMinute = 60*rawHour + rawMinute;
 				var totalLeftMinute = totalMinute-usedMinute;
 				var leftHour = Math.floor(totalLeftMinute/60);
-				var leftMinute = 60-rawMinute;
-				
+				var leftMinute = rawMinute==0?0:60-rawMinute;
+
 				var ampm = rawHour < 12
 				? 'AM'
 				: 'PM';
@@ -93,14 +93,13 @@
 		text-align: center;
 	}
 	#clock{
-		align-items: center;
-		-webkit-align-items: center;
-		display: flex;
+		
+		/*display: flex;*/
 		display: -webkit-flex;
 		height: 130px;
 		justify-content: space-around;
 		-webkit-justify-content: space-around;
-		left: calc(50% - 300px);
+		/*left: calc(50% - 300px);*/
 		/*position: absolute;*/
 		top: calc(50% - 65px);
 		width: 600px;
@@ -119,21 +118,28 @@
 		text-shadow: 0 2px 2px #666;
 		width: 23%;
 	}
+	.center{
+		align-items: center;
+		-webkit-align-items: center;
+	}
 </style>
 </head>
 <body>
 
-	<div class="container-fluid">
-		<p id="date"></p>
+	
+	<p id="date"></p>
+	<div class = "center">	
 		<div id="clock">
+
 			<p class="unit" id="hours"></p>
 			<p class="unit" id="minutes"></p>
 			<p class="unit" id="seconds"></p>
 			<p class="unit" id="ampm"></p>
 
 		</div> 
-		<h1 id = "leftTime"></h1> 
-		
+		<h1 id = "leftTime"></h1></div>
+
+
 	</div>
 
 </body>
