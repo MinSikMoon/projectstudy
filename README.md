@@ -7,10 +7,10 @@
     + 리스트
 
 1 DB
- 1.1 MySQL or Maria
- 1.2 AWS
- 1.3 JPA
- 1.4 UML tool
+    1.1 MySQL or Maria
+    1.2 AWS
+    1.3 JPA
+    1.4 UML tool
  
 1. SERVER
   1. JAVA SPRING
