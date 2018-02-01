@@ -1,9 +1,9 @@
 # stack
-1. DB
- 1. MySQL or Maria
- 1. AWS
- 1. JPA
- 1. UML tool
+* DB
+ * MySQL or Maria
+ * AWS
+ * JPA
+ * UML tool
  
 1. SERVER
   1. JAVA SPRING
